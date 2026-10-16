@@ -2,7 +2,7 @@
 # BEFORE GOING LIVE: change `repo` to your GitHub "username/repository".
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/ubotix-site
+  repo: Ronjabs/ubotix-site
   branch: main
 
 # Uncomment while testing on your own computer (run `npx decap-server` in this folder):
