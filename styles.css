@@ -149,3 +149,5 @@ footer{background:#070a11;padding:48px 28px 24px;border-top:1px solid var(--line
 .fbrand{font-family:"Space Grotesk",sans-serif;font-size:1.3rem;color:#fff}
 @media (max-width:860px){.mosaic{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}.slides{min-height:560px}.stats{margin:16px 20px}}
 @media (max-width:720px){.nav .order{display:none}.foot{grid-template-columns:1fr}}
+
+.split.three{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:stretch;gap:18px}
