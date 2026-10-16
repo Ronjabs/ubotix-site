@@ -1,0 +1,7 @@
+{
+  "cost_per_gram": 1,
+  "cost_per_hour": 50,
+  "design_fee_per_hour": 100,
+  "markup_percent": 20,
+  "round_up_to": 10
+}

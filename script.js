@@ -39,7 +39,7 @@ if (svcs || svcBig) {
   load('services').then(d => {
     const list = d.services || [];
     if (svcs) svcs.innerHTML = list.map(s => `<article class="svc" data-cat="${esc(s.category)}"><span class="chip">${esc(s.tag)}</span><h3>${esc(s.title)}</h3><ul>${(s.bullets || []).map(b => `<li>${esc(b)}</li>`).join('')}</ul><div class="row"><a class="btn primary sm" href="${FB}" target="_blank" rel="noopener">Inquire</a><a class="link" href="services.html">Details</a></div></article>`).join('');
-    if (svcBig) svcBig.innerHTML = list.map((s, i) => `<article class="big"><span class="n ${i % 2 ? 'b' : 'r'}">${String(i + 1).padStart(2, '0')}</span><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></article>`).join('');
+    if (svcBig) svcBig.innerHTML = list.map((s, i) => `<article class="big"><span class="n ${i % 2 ? 'b' : 'r'}">${String(i + 1).padStart(2, '0')}</span><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p>${/3d/i.test(s.title) ? '<p><a class="link" href="estimate.html">Estimate your print cost &rarr;</a></p>' : ''}</article>`).join('');
   }).catch(() => {});
 }
 

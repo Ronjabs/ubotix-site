@@ -57,3 +57,14 @@ collections:
               - { label: "Label on card", name: "tag", widget: "string" }
               - { label: "Short description (Services page)", name: "description", widget: "text" }
               - { label: "Bullet points (Home page card)", name: "bullets", widget: "list", field: { label: "Bullet", name: "bullet", widget: "string" } }
+
+      - name: "pricing"
+        label: "3D print pricing"
+        file: "content/pricing.json"
+        format: "json"
+        fields:
+          - { label: "Cost per gram of filament (PHP)", name: "cost_per_gram", widget: "number", value_type: "float", min: 0 }
+          - { label: "Cost per print hour (PHP)", name: "cost_per_hour", widget: "number", value_type: "float", min: 0 }
+          - { label: "Model design fee per print hour (PHP)", name: "design_fee_per_hour", widget: "number", value_type: "float", min: 0 }
+          - { label: "Markup (%)", name: "markup_percent", widget: "number", value_type: "float", min: 0 }
+          - { label: "Round final price up to nearest (PHP)", name: "round_up_to", widget: "number", value_type: "int", min: 1 }
