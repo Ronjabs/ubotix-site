@@ -20,7 +20,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="estimate.html" class="active" aria-current="page">3D Print Estimate</a>
+      <a href="estimate.html" class="active" aria-current="page">Estimate</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
   </nav>
@@ -31,7 +31,46 @@
 <section class="page-head">
   <p class="tag">3D printing</p>
   <h1>Estimate your print cost</h1>
-  <p class="lead">Enter the numbers from your slicer to get an estimated price. Final price is confirmed by message.</p>
+  <p class="lead">Upload a 3D model or enter the numbers from your slicer to get an estimated price. Final price is confirmed by message.</p>
+</section>
+
+<section class="wrap">
+  <h2>Upload a 3D model</h2>
+  <p class="narrow">Drop in an .stl or .obj file and we'll measure it and estimate the weight, print time and price. Your file stays on your device and is not uploaded anywhere.</p>
+  <div class="split est-split">
+    <div class="card-box upload">
+      <div id="mdlDrop" class="drop" tabindex="0" role="button" aria-label="Choose a 3D model file">
+        <strong>Drop your .stl or .obj file here</strong>
+        <span>or click to choose a file (max 50 MB)</span>
+      </div>
+      <input id="mdlFile" type="file" accept=".stl,.obj" hidden>
+      <div class="opts">
+        <label>Material<select id="mdlMat"><option>PLA</option><option>PETG</option><option>ABS</option></select></label>
+        <label>Infill (%)<input id="mdlInfill" type="number" min="0" max="100" value="20"></label>
+        <label>Layer height (mm)<select id="mdlLayer"><option>0.12</option><option selected>0.2</option><option>0.28</option></select></label>
+        <label>Model units<select id="mdlUnits"><option value="mm">mm</option><option value="cm">cm</option><option value="in">inches</option></select></label>
+        <label>Scale (%)<input id="mdlScale" type="number" min="1" max="1000" value="100"></label>
+      </div>
+      <p id="mdlErr" class="err" role="alert" hidden></p>
+    </div>
+    <div>
+      <div id="mdlView" class="view" hidden></div>
+      <div id="mdlOut" class="card-box result" hidden>
+        <span class="chip">Model estimate</span>
+        <div id="mdlPrice" class="price">&#8369;0.00</div>
+        <ul class="facts">
+          <li><span>File</span><b id="mdlName"></b></li>
+          <li><span>Size</span><b id="mdlSize"></b></li>
+          <li><span>Volume</span><b id="mdlVol"></b></li>
+          <li><span>Est. weight</span><b id="mdlGrams"></b></li>
+          <li><span>Est. print time</span><b id="mdlTime"></b></li>
+        </ul>
+        <p id="mdlWarn" class="err" hidden>The size looks unusual. Check the model units and scale above.</p>
+        <p class="small">Rough estimate only. It is not a real slicer, so real prints can differ by 30% or more. We'll confirm the final price when you send us the file.</p>
+        <div class="cta"><a class="btn primary" href="https://www.facebook.com/profile.php?id=61595112535000" target="_blank" rel="noopener">Message us to order</a><button type="button" class="btn" id="mdlUse">Use in calculator</button></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="wrap split">
@@ -67,6 +106,7 @@
   </div>
 </section>
 <script src="estimate.js"></script>
+<script src="slicer.js"></script>
 
 </main>
 <footer>
