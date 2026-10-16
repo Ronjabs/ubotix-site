@@ -1,0 +1,4 @@
+.claude/
+# full-size originals (the site uses images/gallery/*)
+images/*.jpg
+images/*.jpeg

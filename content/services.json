@@ -1,0 +1,48 @@
+{
+  "services": [
+    {
+      "category": "make",
+      "tag": "Make",
+      "title": "3D printing",
+      "description": "Custom 3D printing for prototypes, project parts and designs, serving students and the whole University of Baguio community.",
+      "bullets": [
+        "Prototypes and project parts",
+        "Custom designs",
+        "Open to the whole UB community"
+      ]
+    },
+    {
+      "category": "make",
+      "tag": "Make",
+      "title": "Basic PCB fabrication",
+      "description": "Basic PCB fabrication for students' electronics and robotics projects, from circuit design files to ready-to-assemble boards.",
+      "bullets": [
+        "From circuit design files",
+        "Ready-to-assemble boards",
+        "For student electronics and robotics projects"
+      ]
+    },
+    {
+      "category": "shop",
+      "tag": "Shop",
+      "title": "Merch & club products",
+      "description": "Merch, keychains and club-made products, robotics and non-robotics themed, for the whole University of Baguio community. Order via our page or DM us.",
+      "bullets": [
+        "Keychains and club-made products",
+        "Robotics and non-robotics themed",
+        "Order via our page or DM us"
+      ]
+    },
+    {
+      "category": "train",
+      "tag": "Compete",
+      "title": "Robotics competitions",
+      "description": "Team training and active participation in robotics competitions and extracurricular activities for UB School of IT students.",
+      "bullets": [
+        "Team training",
+        "Local to international events",
+        "For UB School of IT students"
+      ]
+    }
+  ]
+}

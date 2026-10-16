@@ -1,0 +1,28 @@
+{
+  "photos": [
+    {
+      "image": "images/gallery/photo3.jpg",
+      "caption": "ROBOlution 3rd Robotics and Automation International Competition, University of Makati, December 2024"
+    },
+    {
+      "image": "images/gallery/photo1.jpg",
+      "caption": "Medalists at ROBOlution 2024"
+    },
+    {
+      "image": "images/gallery/photo4.jpg",
+      "caption": "Humanoid robots in the sumo ring"
+    },
+    {
+      "image": "images/gallery/photo6.jpg",
+      "caption": "Setting up a humanoid robot for a sumo match"
+    },
+    {
+      "image": "images/gallery/photo5.jpg",
+      "caption": "Team break between rounds at an international robotics championship"
+    },
+    {
+      "image": "images/gallery/photo2.jpg",
+      "caption": "Heading out to compete abroad"
+    }
+  ]
+}
