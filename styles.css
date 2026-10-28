@@ -14,7 +14,7 @@ img{max-width:100%;display:block}
 /* nav */
 .nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:rgba(10,14,23,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.3rem}
-.brand img{height:38px;width:auto}
+.brand img{height:38px;width:auto;background:#fff;border-radius:8px;padding:3px}
 nav{display:flex;gap:6px}
 nav a{padding:8px 14px;border-radius:var(--radius);text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
 nav a:hover{color:#fff;background:var(--panel2)}
